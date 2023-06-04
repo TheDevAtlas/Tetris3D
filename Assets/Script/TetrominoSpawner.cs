@@ -9,10 +9,11 @@ public class TetrominoSpawner : MonoBehaviour
     public void NewTetromino()
     {
         Instantiate(Tetrominoes[Random.Range(0, Tetrominoes.Length)], transform.position, Quaternion.identity);
+        GameController.score += 10 * GameController.level;
     }
 
     void Start()
     {
-        NewTetromino();
+        //NewTetromino();
     }
 }

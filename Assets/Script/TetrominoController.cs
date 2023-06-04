@@ -7,9 +7,9 @@ public class TetrominoController : MonoBehaviour
     public Vector3 rotationPoint;
     private float previousTime;
     public float fallTime = 0.8f;
-    private static int height = 10;
-    private static int width = 7;
-    private static Transform[,,] grid = new Transform[width, height, width];
+    public static int height = 10;
+    public static int width = 7;
+    public static Transform[,,] grid = new Transform[width, height, width];
 
     void Update()
     {
@@ -87,6 +87,14 @@ public class TetrominoController : MonoBehaviour
             int roundedY = Mathf.RoundToInt(children.transform.position.y);
             int roundedZ = Mathf.RoundToInt(children.transform.position.z);
 
+            if(roundedY >= height)
+            {
+                GameObject gc = GameObject.FindGameObjectWithTag("GameController");
+                gc.GetComponent<GameController>().Reset();
+                Destroy(this.gameObject);
+                return;
+            }
+
             grid[roundedX, roundedY, roundedZ] = children;
         }
     }
@@ -126,6 +134,9 @@ public class TetrominoController : MonoBehaviour
                 grid[j, i, k] = null;
             }
         }
+
+        GameController.score += 100 * GameController.level;
+        GameController.level += 1;
     }
 
     void RowDown(int i)
@@ -155,10 +166,17 @@ public class TetrominoController : MonoBehaviour
             int roundedY = Mathf.RoundToInt(children.transform.position.y);
             int roundedZ = Mathf.RoundToInt(children.transform.position.z);
 
-            if (roundedX < 0 || roundedX >= width || roundedY < 0 || roundedY >= height || roundedZ < 0 || roundedZ >= width)
+            if (roundedX < 0 || roundedX >= width || roundedY < 0 || roundedZ < 0 || roundedZ >= width)
             {
                 return false;
             }
+
+            //if (roundedY >= height)
+            //{
+            //    GameObject gc = GameObject.FindGameObjectWithTag("GameController");
+            //    gc.GetComponent<GameController>().Reset();
+            //    return false;
+            //}
 
             if (grid[roundedX, roundedY, roundedZ] != null)
                 return false;

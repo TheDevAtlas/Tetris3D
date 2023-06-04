@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: -4554610093407479476}
   m_Layer: 0
   m_Name: J-Mino
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

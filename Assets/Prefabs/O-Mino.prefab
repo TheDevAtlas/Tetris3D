@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: -5045283712605140836}
   m_Layer: 0
   m_Name: O-Mino
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

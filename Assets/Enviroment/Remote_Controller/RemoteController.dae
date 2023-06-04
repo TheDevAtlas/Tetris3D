@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<COLLADA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <created>2022-08-03T16:32:23.7502576-04:00</created>
+    <modified>2022-08-03T16:32:23.7502576-04:00</modified>
+  </asset>
+  <library_images>
+    <image id="Communication4">
+      <init_from>Communication4.png</init_from>
+    </image>
+    <image id="RemoteController2">
+      <init_from>RemoteController2.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="CommunicationC_mat_id" name="CommunicationC_mat">
+      <instance_effect url="#CommunicationC_eff_id" />
+    </material>
+    <material id="RemoteMt_mat_id" name="RemoteMt_mat">
+      <instance_effect url="#RemoteMt_eff_id" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="CommunicationC_eff_id" name="CommunicationC_eff">
+      <profile_COMMON>
+        <newparam sid="CommunicationC_surf">
+          <surface type="2D">
+            <init_from>Communication4</init_from>
+            <format>PNG</format>
+          </surface>
+        </newparam>
+        <newparam sid="CommunicationC_samp">
+          <sampler2D>
+            <source>CommunicationC_surf</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+            <mipfilter>LINEAR</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="CommunicationC_tech">
+          <phong>
+            <diffuse>
+              <texture texture="CommunicationC_samp" texcoord="uv" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="RemoteMt_eff_id" name="RemoteMt_eff">
+      <profile_COMMON>
+        <newparam sid="RemoteMt_surf">
+          <surface type="2D">
+            <init_from>RemoteController2</init_from>
+            <format>PNG</format>
+          </surface>
+        </newparam>
+        <newparam sid="RemoteMt_samp">
+          <sampler2D>
+            <source>RemoteMt_surf</source>
+            <wrap_s>MIRROR</wrap_s>
+            <wrap_t>MIRROR</wrap_t>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+            <mipfilter>LINEAR</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="RemoteMt_tech">
+          <phong>
+            <diffuse>
+              <texture texture="RemoteMt_samp" texcoord="uv" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="CommunicationM_0_0_geo_id" name="CommunicationM_0_0">
+      <mesh>
+        <source id="CommunicationM_0_0_Position_id" name="CommunicationM_0_0_Position">
+          <float_array id="CommunicationM_0_0_Position_array_id" count="342">-0.241086 2.42411 -1.03878 -0.241086 1.77057 -1.13399 -0.241086 2.39261 -1.50204 -0.241086 1.7817 -1.45984 -0.241086 2.02724 0.0750646 -0.241086 1.53396 -0.636383 -0.241086 2.3168 -0.471357 -0.241086 1.6681 -0.824004 -0.241086 1.58998 0.290334 -0.241086 1.39477 -0.379848 -0.571304 2.09734 -1.08638 0.0891313 2.09734 -1.08638 -0.547266 2.08715 -1.48094 0.0650934 2.08715 -1.48094 -0.673948 1.7806 -0.280659 0.191776 1.7806 -0.280659 -0.610263 1.99245 -0.64768 0.128091 1.99245 -0.64768 -0.590103 1.49237 -0.0447565 0.107931 1.49237 -0.0447565 -0.673948 1.7806 -0.280659 0.191776 1.7806 -0.280659 -0.610263 1.99245 -0.64768 0.128091 1.99245 -0.64768 -0.571304 2.09734 -1.08638 0.0891313 2.09734 -1.08638 -0.241086 2.26756 -1.88486 -0.241086 1.73212 -1.71487 -0.241086 1.78619 -2.48452 -0.241086 2.0625 -2.25402 -0.241086 1.52994 -2.09703 -0.241086 1.64991 -1.92769 -0.241086 1.46512 -2.5785 -0.241086 1.40101 -2.2215 -0.521977 1.99984 -1.79987 -0.547266 2.08715 -1.48094 0.0398044 1.99984 -1.79987 0.0650934 2.08715 -1.48094 -0.473365 1.65807 -2.29077 -0.504105 1.85621 -2.09086 -0.0088079 1.65807 -2.29077 0.0219326 1.85621 -2.09086 -0.422445 1.43306 -2.4 -0.473365 1.65807 -2.29077 -0.0597275 1.43306 -2.4 -0.0088079 1.65807 -2.29077 -0.504105 1.85621 -2.09086 -0.521977 1.99984 -1.79987 0.0219326 1.85621 -2.09086 0.0398044 1.99984 -1.79987 -0.00758724 2.3284 -1.05272 -0.474585 1.86628 -1.12005 -0.0245847 2.30314 -1.49586 -0.457588 1.87117 -1.46602 0.0649933 1.955 -0.0291242 -0.547166 1.6062 -0.532194 0.0199612 2.2218 -0.523001 -0.502134 1.7631 -0.77236 0.00570594 1.56139 0.192189 -0.487879 1.42335 -0.281702 0.0649933 1.955 -0.0291242 -0.547166 1.6062 -0.532194 0.0199612 2.2218 -0.523001 -0.502134 1.7631 -0.77236 -0.00758724 2.3284 -1.05272 -0.474585 1.86628 -1.12005 -0.474585 2.3284 -1.05272 -0.00758722 1.86628 -1.12005 -0.457588 2.30314 -1.49586 -0.0245846 1.87117 -1.46602 -0.547166 1.955 -0.0291241 0.0649933 1.6062 -0.532194 -0.502134 2.2218 -0.523001 0.0199612 1.7631 -0.77236 -0.487879 1.56139 0.192189 0.00570594 1.42335 -0.281702 -0.547166 1.955 -0.0291241 0.0649933 1.6062 -0.532194 -0.502134 2.2218 -0.523001 0.0199612 1.7631 -0.77236 -0.474585 2.3284 -1.05272 -0.00758722 1.86628 -1.12005 -0.0245847 2.30314 -1.49586 -0.457588 1.87117 -1.46602 -0.0424667 2.18915 -1.85997 -0.439706 1.81053 -1.73977 -0.0768405 1.74867 -2.42777 -0.0551042 2.00208 -2.20623 -0.405332 1.56747 -2.15377 -0.427069 1.71034 -1.97548 -0.112847 1.45573 -2.52622 -0.0768405 1.74867 -2.42777 -0.369326 1.4104 -2.27378 -0.405332 1.56747 -2.15377 -0.0551042 2.00208 -2.20623 -0.0424667 2.18915 -1.85997 -0.427069 1.71034 -1.97548 -0.439706 1.81053 -1.73977 -0.457588 2.30314 -1.49586 -0.0245846 1.87117 -1.46602 -0.439706 2.18915 -1.85997 -0.0424666 1.81053 -1.73977 -0.405332 1.74867 -2.42777 -0.427069 2.00208 -2.20623 -0.0768404 1.56747 -2.15377 -0.0551041 1.71034 -1.97548 -0.369326 1.45573 -2.52622 -0.405332 1.74867 -2.42777 -0.112847 1.4104 -2.27378 -0.0768404 1.56747 -2.15377 -0.427069 2.00208 -2.20623 -0.439706 2.18915 -1.85997 -0.0551041 1.71034 -1.97548 -0.0424666 1.81053 -1.73977</float_array>
+          <technique_common>
+            <accessor source="#CommunicationM_0_0_Position_array_id" count="114" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="CommunicationM_0_0_TexCoord0_id" name="CommunicationM_0_0_TexCoord0">
+          <float_array id="CommunicationM_0_0_TexCoord0_array_id" count="228">0.2739036 1 0.2739036 0 0.3646962 1 0.3646962 0 0.09231849 1 0.09231849 0 0.1831111 1 0.1831111 0 0.001525925 1 0.001525925 0 0.2739036 1 0.2739036 0 0.3646962 1 0.3646962 0 0.09231849 1 0.09231849 0 0.1831111 1 0.1831111 0 0.001525925 1 0.001525925 0 0.09231849 1 0.09231849 0 0.1831111 1 0.1831111 0 0.2739036 1 0.2739036 0 0.4555193 1 0.4555193 0 0.6371044 1 0.5463119 1 0.6371044 0 0.5463119 0 0.727897 1 0.727897 0 0.4555193 1 0.3646962 1 0.4555193 0 0.3646962 0 0.6371044 1 0.5463119 1 0.6371044 0 0.5463119 0 0.727897 1 0.6371044 1 0.727897 0 0.6371044 0 0.5463119 1 0.4555193 1 0.5463119 0 0.4555193 0 0.2739036 1 0.2739036 0 0.3646962 1 0.3646962 0 0.09231849 1 0.09231849 0 0.1831111 1 0.1831111 0 0.001525925 1 0.001525925 0 0.09231849 1 0.09231849 0 0.1831111 1 0.1831111 0 0.2739036 1 0.2739036 0 0.2739036 1 0.2739036 0 0.3646962 1 0.3646962 0 0.09231849 1 0.09231849 0 0.1831111 1 0.1831111 0 0.001525925 1 0.001525925 0 0.09231849 1 0.09231849 0 0.1831111 1 0.1831111 0 0.2739036 1 0.2739036 0 0.3646962 1 0.3646962 0 0.4555193 1 0.4555193 0 0.6371044 1 0.5463119 1 0.6371044 0 0.5463119 0 0.727897 1 0.6371044 1 0.727897 0 0.6371044 0 0.5463119 1 0.4555193 1 0.5463119 0 0.4555193 0 0.3646962 1 0.3646962 0 0.4555193 1 0.4555193 0 0.6371044 1 0.5463119 1 0.6371044 0 0.5463119 0 0.727897 1 0.6371044 1 0.727897 0 0.6371044 0 0.5463119 1 0.4555193 1 0.5463119 0 0.4555193 0</float_array>
+          <technique_common>
+            <accessor source="#CommunicationM_0_0_TexCoord0_array_id" count="114" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="CommunicationM_0_0_Normal_id" name="CommunicationM_0_0_Normal">
+          <float_array id="CommunicationM_0_0_Normal_array_id" count="342">1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 -0.02362205 0 1 -0.02362205 0 1 -0.02362205 0 1 -0.02362205 0 0.8661417 0.496063 0 0.8661417 0.496063 0 0.8661417 0.496063 0 0.8661417 0.496063 0 0.6299213 0.7716535 0 0.6299213 0.7716535 0 0.6299213 0.7716535 0 0.6299213 0.7716535 0 0.976378 0.2362205 0 0.976378 0.2362205 0 0.976378 0.2362205 0 0.976378 0.2362205 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0.9606299 -0.2677165 0 0.9606299 -0.2677165 0 0.9606299 -0.2677165 0 0.9606299 -0.2677165 0 0.7086614 -0.7007874 0 0.7086614 -0.7007874 0 0.7086614 -0.7007874 0 0.7086614 -0.7007874 0 0.4330709 -0.8976378 0 0.4330709 -0.8976378 0 0.4330709 -0.8976378 0 0.4330709 -0.8976378 0 0.8976378 -0.4409449 0 0.8976378 -0.4409449 0 0.8976378 -0.4409449 0 0.8976378 -0.4409449 0.7007874 -0.7086614 0.01574803 0.7007874 -0.7086614 0.01574803 0.7007874 -0.7086614 0.01574803 0.7007874 -0.7086614 0.01574803 0.6850393 -0.6299213 -0.3622047 0.6850393 -0.6299213 -0.3622047 0.6850393 -0.6299213 -0.3622047 0.6850393 -0.6299213 -0.3622047 0.6929134 -0.4566929 -0.5590551 0.6929134 -0.4566929 -0.5590551 0.6929134 -0.4566929 -0.5590551 0.6929134 -0.4566929 -0.5590551 0.7007874 -0.6929134 -0.1653543 0.7007874 -0.6929134 -0.1653543 0.7007874 -0.6929134 -0.1653543 0.7007874 -0.6929134 -0.1653543 0.7007874 0.7086614 -0.01574803 0.7007874 0.7086614 -0.01574803 0.7007874 0.7086614 -0.01574803 0.7007874 0.7086614 -0.01574803 0.6850393 0.6299213 0.3622047 0.6850393 0.6299213 0.3622047 0.6850393 0.6299213 0.3622047 0.6850393 0.6299213 0.3622047 0.6929134 0.4566929 0.5590551 0.6929134 0.4566929 0.5590551 0.6929134 0.4566929 0.5590551 0.6929134 0.4566929 0.5590551 0.7007874 0.6929134 0.1653543 0.7007874 0.6929134 0.1653543 0.7007874 0.6929134 0.1653543 0.7007874 0.6929134 0.1653543 0.7007874 -0.6850393 0.1889764 0.7007874 -0.6850393 0.1889764 0.7007874 -0.6850393 0.1889764 0.7007874 -0.6850393 0.1889764 0.7007874 -0.503937 0.503937 0.7007874 -0.503937 0.503937 0.7007874 -0.503937 0.503937 0.7007874 -0.503937 0.503937 0.7007874 -0.3149606 0.6456693 0.7007874 -0.3149606 0.6456693 0.7007874 -0.3149606 0.6456693 0.7007874 -0.3149606 0.6456693 0.7007874 -0.6377953 0.3149606 0.7007874 -0.6377953 0.3149606 0.7007874 -0.6377953 0.3149606 0.7007874 -0.6377953 0.3149606 0.7007874 0.6850393 -0.1889764 0.7007874 0.6850393 -0.1889764 0.7007874 0.6850393 -0.1889764 0.7007874 0.6850393 -0.1889764 0.7007874 0.503937 -0.503937 0.7007874 0.503937 -0.503937 0.7007874 0.503937 -0.503937 0.7007874 0.503937 -0.503937 0.7007874 0.3149606 -0.6456693 0.7007874 0.3149606 -0.6456693 0.7007874 0.3149606 -0.6456693 0.7007874 0.3149606 -0.6456693 0.7007874 0.6377953 -0.3149606 0.7007874 0.6377953 -0.3149606 0.7007874 0.6377953 -0.3149606 0.7007874 0.6377953 -0.3149606</float_array>
+          <technique_common>
+            <accessor source="#CommunicationM_0_0_Normal_array_id" count="114" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="CommunicationM_0_0_vtx_id">
+          <input semantic="POSITION" source="#CommunicationM_0_0_Position_id" />
+          <input semantic="NORMAL" source="#CommunicationM_0_0_Normal_id" />
+        </vertices>
+        <triangles material="Mdl_0_Mtl_CommunicationC" count="64">
+          <input semantic="VERTEX" source="#CommunicationM_0_0_vtx_id" offset="0" />
+          <input semantic="TEXCOORD" source="#CommunicationM_0_0_TexCoord0_id" offset="0" set="0" />
+          <p>0 1 2 2 1 3 4 5 6 6 5 7 8 9 4 4 9 5 6 7 0 0 7 1 10 11 12 12 11 13 14 15 16 16 15 17 18 19 20 20 19 21 22 23 24 24 23 25 2 3 26 26 3 27 28 29 30 30 29 31 32 28 33 33 28 30 29 26 31 31 26 27 34 35 36 36 35 37 38 39 40 40 39 41 42 43 44 44 43 45 46 47 48 48 47 49 50 51 52 52 51 53 54 55 56 56 55 57 58 59 60 60 59 61 62 63 64 64 63 65 66 67 68 68 67 69 70 71 72 72 71 73 74 75 76 76 75 77 78 79 80 80 79 81 82 83 84 84 83 85 86 87 88 88 87 89 90 91 92 92 91 93 94 95 96 96 95 97 98 99 100 100 99 101 102 103 104 104 103 105 106 107 108 108 107 109 110 111 112 112 111 113</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Antena1M_1_0_geo_id" name="Antena1M_1_0">
+      <mesh>
+        <source id="Antena1M_1_0_Position_id" name="Antena1M_1_0_Position">
+          <float_array id="Antena1M_1_0_Position_array_id" count="36">-0.04817275 1.033925 -0.07794225 -0.1327451 1.003143 -0.07794233 -0.1794551 1.3357 -0.04303836 -0.2261544 1.318703 -0.04303836 -0.1750312 0.9877518 0 -0.2495041 1.310204 0 -0.1327451 1.003143 0.07794225 -0.2261544 1.318703 0.04303836 -0.04817275 1.033925 0.07794225 -0.1794551 1.3357 0.04303836 -0.005886581 1.049315 0 -0.1561055 1.344198 0</float_array>
+          <technique_common>
+            <accessor source="#Antena1M_1_0_Position_array_id" count="12" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Antena1M_1_0_TexCoord0_id" name="Antena1M_1_0_TexCoord0">
+          <float_array id="Antena1M_1_0_TexCoord0_array_id" count="24">0.9987509 1.058174 0.9987509 0.9441269 0.7750138 1.057595 0.7750138 0.9447055 0.9987509 0.8870866 0.7750138 0.8882778 0.9987509 0.9441269 0.7750138 0.9447055 0.9987509 1.058174 0.7750138 1.057595 0.9987509 1.11518 0.7750138 1.114023</float_array>
+          <technique_common>
+            <accessor source="#Antena1M_1_0_TexCoord0_array_id" count="12" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Antena1M_1_0_Normal_id" name="Antena1M_1_0_Normal">
+          <float_array id="Antena1M_1_0_Normal_array_id" count="36">0.4205102 0.2863156 -0.8609266 -0.5061697 -0.05096838 -0.8609266 0.4205102 0.2863156 -0.8609266 -0.5061697 -0.05096838 -0.8609266 -0.975074 -0.2218799 0 -0.975074 -0.2218799 0 -0.5061697 -0.05096838 0.8609266 -0.5061697 -0.05096838 0.8609266 0.4205102 0.2863156 0.8609266 0.4205102 0.2863156 0.8609266 0.8895715 0.4567959 0 0.8895715 0.4567959 0</float_array>
+          <technique_common>
+            <accessor source="#Antena1M_1_0_Normal_array_id" count="12" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Antena1M_1_0_vtx_id">
+          <input semantic="POSITION" source="#Antena1M_1_0_Position_id" />
+          <input semantic="NORMAL" source="#Antena1M_1_0_Normal_id" />
+        </vertices>
+        <triangles material="Mdl_0_Mtl_RemoteMt" count="12">
+          <input semantic="VERTEX" source="#Antena1M_1_0_vtx_id" offset="0" />
+          <input semantic="TEXCOORD" source="#Antena1M_1_0_TexCoord0_id" offset="0" set="0" />
+          <p>0 1 2 2 1 3 1 4 3 3 4 5 4 6 5 5 6 7 6 8 7 7 8 9 8 10 9 9 10 11 10 0 11 11 0 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Antena2M_2_0_geo_id" name="Antena2M_2_0">
+      <mesh>
+        <source id="Antena2M_2_0_Position_id" name="Antena2M_2_0_Position">
+          <float_array id="Antena2M_2_0_Position_array_id" count="78">-0.1427145 1.312619 -0.0891639 -0.239463 1.277405 -0.0891639 -0.142772 1.4058 -0.14427 -0.2993144 1.348823 -0.14427 -0.2878377 1.259798 0 -0.3775857 1.320334 0 -0.239463 1.277405 0.0891639 -0.2993145 1.348823 0.14427 -0.1427145 1.312619 0.0891639 -0.1427721 1.405799 0.14427 -0.09433991 1.330226 0 -0.06450081 1.434288 0 -0.1797978 1.507527 -0.14427 -0.3363401 1.45055 -0.14427 -0.4146115 1.422062 0 -0.3363402 1.45055 0.14427 -0.1797979 1.507527 0.14427 -0.1015266 1.536015 0 -0.2396492 1.578944 -0.0891639 -0.3363977 1.543731 -0.0891639 -0.3847724 1.526124 0 -0.3363977 1.543731 0.0891639 -0.2396492 1.578944 0.0891639 -0.1912746 1.596551 0 -0.1796472 1.263576 0 -0.2994651 1.592773 0</float_array>
+          <technique_common>
+            <accessor source="#Antena2M_2_0_Position_array_id" count="26" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Antena2M_2_0_TexCoord0_id" name="Antena2M_2_0_TexCoord0">
+          <float_array id="Antena2M_2_0_TexCoord0_array_id" count="52">0.7217704 1.018318 0.7217704 0.9820614 0.6868064 1.029499 0.6868064 0.9708484 0.7217704 0.9639332 0.6868064 0.9415394 0.7217704 0.9820614 0.6868064 0.9708484 0.7217704 1.018318 0.6868064 1.029499 0.7217704 1.036414 0.6868064 1.05884 0.6436346 1.029499 0.6436346 0.9708484 0.6436346 0.9415394 0.6436346 0.9708484 0.6436346 1.029499 0.6436346 1.05884 0.608703 1.018318 0.608703 0.9820614 0.608703 0.9639332 0.608703 0.9820614 0.608703 1.018318 0.608703 1.036414 0.7351162 1.00019 0.5953572 1.00019</float_array>
+          <technique_common>
+            <accessor source="#Antena2M_2_0_TexCoord0_array_id" count="26" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Antena2M_2_0_Normal_id" name="Antena2M_2_0_Normal">
+          <float_array id="Antena2M_2_0_Normal_array_id" count="78">0.5534196 -0.6693498 -0.495679 0.006305991 -0.8684829 -0.495679 0.5536149 -0.134855 -0.8217814 -0.3374104 -0.4591618 -0.8217814 -0.2599298 -0.9656276 0 -0.7833143 -0.6216258 0 0.006305991 -0.8684829 0.495679 -0.3374104 -0.4591618 0.8217814 0.5534196 -0.6693498 0.495679 0.5536149 -0.134855 0.8217814 0.8198114 -0.5726337 0 0.9996269 0.02731205 0 0.3374104 0.4591618 -0.8217814 -0.5536149 0.134855 -0.8217814 -0.9996269 -0.02731205 0 -0.5536149 0.134855 0.8217814 0.3374104 0.4591618 0.8217814 0.7833143 0.6216258 0 -0.006305991 0.8684829 -0.495679 -0.5534196 0.6693498 -0.495679 -0.8198114 0.5726337 0 -0.5534196 0.6693498 0.495679 -0.006305991 0.8684829 0.495679 0.2599298 0.9656276 0 0.3420203 -0.9396926 0 -0.3420203 0.9396926 0</float_array>
+          <technique_common>
+            <accessor source="#Antena2M_2_0_Normal_array_id" count="26" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Antena2M_2_0_vtx_id">
+          <input semantic="POSITION" source="#Antena2M_2_0_Position_id" />
+          <input semantic="NORMAL" source="#Antena2M_2_0_Normal_id" />
+        </vertices>
+        <triangles material="Mdl_0_Mtl_RemoteMt" count="48">
+          <input semantic="VERTEX" source="#Antena2M_2_0_vtx_id" offset="0" />
+          <input semantic="TEXCOORD" source="#Antena2M_2_0_TexCoord0_id" offset="0" set="0" />
+          <p>0 1 2 2 1 3 1 4 3 3 4 5 4 6 5 5 6 7 6 8 7 7 8 9 8 10 9 9 10 11 10 0 11 11 0 2 2 3 12 12 3 13 3 5 13 13 5 14 5 7 14 14 7 15 7 9 15 15 9 16 9 11 16 16 11 17 11 2 17 17 2 12 12 13 18 18 13 19 13 14 19 19 14 20 14 15 20 20 15 21 15 16 21 21 16 22 16 17 22 22 17 23 17 12 23 23 12 18 1 0 24 4 1 24 6 4 24 8 6 24 10 8 24 0 10 24 18 19 25 19 20 25 20 21 25 21 22 25 22 23 25 23 18 25</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="BodyM_3_0_geo_id" name="BodyM_3_0">
+      <mesh>
+        <source id="BodyM_3_0_Position_id" name="BodyM_3_0_Position">
+          <float_array id="BodyM_3_0_Position_array_id" count="192">-0.07297224 0.03429505 -0.1237644 0.5288022 0.2533231 -0.1237644 -0.07297224 0.03429505 0.1237644 0.5288022 0.2533231 0.1237644 0.5093843 0.3066731 0.1903959 0.2061015 1.139935 0.1903959 -0.09239004 0.087645 0.1903959 -0.3956729 0.9209074 0.1903959 -0.4660717 0.8952842 0.1237644 -0.4660717 0.8952842 -0.1237644 -0.1627889 0.0620219 0.1237644 -0.1627889 0.0620219 -0.1237644 0.5797832 0.3322962 -0.1237644 0.2765004 1.165559 -0.1237644 0.5797832 0.3322962 0.1237644 0.2765004 1.165559 0.1237644 0.1866837 1.193285 0.1237644 0.1866837 1.193285 -0.1237644 -0.4150907 0.9742573 0.1237644 -0.4150907 0.9742573 -0.1237644 0.2061015 1.139935 -0.1903959 0.5093843 0.3066731 -0.1903959 -0.3956729 0.9209074 -0.1903959 -0.09239004 0.087645 -0.1903959 -0.1627889 0.0620219 0.1237644 -0.1627889 0.0620219 -0.1237644 -0.08500358 0.0517702 0.1691577 0.5267859 0.2744434 0.1691577 -0.1332285 0.07292369 0.1691577 -0.4364196 0.905934 0.1691577 0.5797832 0.3322962 0.1237644 0.5797832 0.3322962 -0.1237644 0.5501311 0.3216464 0.1691577 0.24694 1.154657 0.1691577 -0.4660717 0.8952842 0.1237644 -0.4660717 0.8952842 -0.1237644 -0.4130744 0.953137 0.1691577 0.1987151 1.17581 0.1691577 0.2765004 1.165559 0.1237644 0.2765004 1.165559 -0.1237644 -0.4364196 0.905934 -0.1691577 -0.1332285 0.07292369 -0.1691577 -0.4130744 0.953137 -0.1691577 0.1987151 1.17581 -0.1691577 0.24694 1.154657 -0.1691577 0.5501311 0.3216464 -0.1691577 -0.08500358 0.0517702 -0.1691577 0.5267859 0.2744434 -0.1691577 0.2765004 1.165559 0.1237644 0.1866837 1.193285 0.1237644 -0.4150907 0.9742573 0.1237644 -0.4660717 0.8952842 0.1237644 -0.1627889 0.0620219 0.1237644 -0.07297224 0.03429505 0.1237644 0.5288022 0.2533231 0.1237644 0.5797832 0.3322962 0.1237644 0.2765004 1.165559 -0.1237644 0.5797832 0.3322962 -0.1237644 0.5288022 0.2533231 -0.1237644 -0.07297224 0.03429505 -0.1237644 -0.1627889 0.0620219 -0.1237644 -0.4660717 0.8952842 -0.1237644 -0.4150907 0.9742573 -0.1237644 0.1866837 1.193285 -0.1237644</float_array>
+          <technique_common>
+            <accessor source="#BodyM_3_0_Position_array_id" count="64" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="BodyM_3_0_TexCoord0_id" name="BodyM_3_0_TexCoord0">
+          <float_array id="BodyM_3_0_TexCoord0_array_id" count="128">0.05438552 0.9875708 0.5315192 0.9875708 0.05438552 0.8265148 0.5315192 0.8265148 0.5315192 0.06553761 0.5315192 0.7807225 0.05438552 0.06553761 0.05438552 0.7807225 0.5873178 0.7807225 0.7505125 0.7807225 0.5873178 0.06553761 0.7505125 0.06553761 0.7505125 0.06553761 0.7505125 0.7807225 0.5873178 0.06553761 0.5873178 0.7807225 0.5315192 0.8265148 0.5315192 0.9875708 0.05438552 0.8265148 0.05438552 0.9875708 1.204196 0.7807225 1.204196 0.06553761 0.8003914 0.7807225 0.8003914 0.06553761 -0.001413107 0.8265148 -0.001413107 0.9875708 0.05438552 0.04266055 0.5315192 0.04266055 0.0265053 0.06553761 0.0265053 0.7807225 0.5873178 0.8265148 0.5873178 0.9875708 0.5593994 0.06553761 0.5593994 0.7807225 -0.001413107 0.8265148 -0.001413107 0.9875708 0.05438552 0.8035995 0.5315192 0.8035995 0.5873178 0.8265148 0.5873178 0.9875708 0.7767505 0.7807225 0.7767505 0.06553761 0.8003914 0.8035995 1.204196 0.8035995 1.227837 0.7807225 1.227837 0.06553761 0.8003914 0.04266055 1.204196 0.04266055 0.5873178 0.7807225 0.5315192 0.8265148 0.05438552 0.8265148 -0.001413107 0.7807225 -0.001413107 0.06553761 0.05438552 0.01974531 0.5315192 0.01974531 0.5873178 0.06553761 1.25144 0.7807225 1.25144 0.06553761 1.204196 0.01974531 0.8003914 0.01974531 0.7531478 0.06553761 0.7531478 0.7807225 0.8003914 0.8265148 1.204196 0.8265148</float_array>
+          <technique_common>
+            <accessor source="#BodyM_3_0_TexCoord0_array_id" count="64" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="BodyM_3_0_Normal_id" name="BodyM_3_0_Normal">
+          <float_array id="BodyM_3_0_Normal_array_id" count="192">0.02259658 -0.9997447 0 0.6253137 -0.7803735 0 0.02259658 -0.9997447 0 0.6253137 -0.7803735 0 0.2953572 -0.155239 0.9426903 0.1264709 0.3087719 0.9426903 -0.1264709 -0.3087719 0.9426903 -0.2953572 0.155239 0.9426903 -0.9934427 0.1143311 0 -0.9934427 0.1143311 0 -0.6875305 -0.7261555 0 -0.6875305 -0.7261555 0 0.9934427 -0.1143311 0 0.6875305 0.7261555 0 0.9934427 -0.1143311 0 0.6875305 0.7261555 0 -0.02259658 0.9997447 0 -0.02259658 0.9997447 0 -0.6253137 0.7803735 0 -0.6253137 0.7803735 0 0.1264709 0.3087719 -0.9426903 0.2953572 -0.155239 -0.9426903 -0.2953572 0.155239 -0.9426903 -0.1264709 -0.3087719 -0.9426903 -0.6875305 -0.7261555 0 -0.6875305 -0.7261555 0 -0.01249635 -0.7490529 0.6623924 0.4910548 -0.5657752 0.6623924 -0.4760025 -0.5076101 0.7181599 -0.6909246 0.08288318 0.7181599 0.9934427 -0.1143311 0 0.9934427 -0.1143311 0 0.6909246 -0.08288318 0.7181599 0.4760025 0.5076101 0.7181599 -0.9934427 0.1143311 0 -0.9934427 0.1143311 0 -0.4910548 0.5657752 0.6623924 0.01249635 0.7490529 0.6623924 0.6875305 0.7261555 0 0.6875305 0.7261555 0 -0.6909246 0.08288318 -0.7181599 -0.4760025 -0.5076101 -0.7181599 -0.4910548 0.5657752 -0.6623924 0.01249635 0.7490529 -0.6623924 0.4760025 0.5076101 -0.7181599 0.6909246 -0.08288318 -0.7181599 -0.01249635 -0.7490529 -0.6623924 0.4910548 -0.5657752 -0.6623924 0.5936238 0.6366749 0.4921948 -0.001543609 0.9187998 0.3947209 -0.5894108 0.7048335 0.3947208 -0.8639891 0.106147 0.4921948 -0.5936238 -0.6366749 0.4921948 0.001543609 -0.9187998 0.3947209 0.5894108 -0.7048335 0.3947208 0.8639891 -0.106147 0.4921948 0.5936238 0.6366749 -0.4921948 0.8639891 -0.106147 -0.4921948 0.5894108 -0.7048335 -0.3947208 0.001543609 -0.9187998 -0.3947209 -0.5936238 -0.6366749 -0.4921948 -0.8639891 0.106147 -0.4921948 -0.5894108 0.7048335 -0.3947208 -0.001543609 0.9187998 -0.3947209</float_array>
+          <technique_common>
+            <accessor source="#BodyM_3_0_Normal_array_id" count="64" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="BodyM_3_0_vtx_id">
+          <input semantic="POSITION" source="#BodyM_3_0_Position_id" />
+          <input semantic="NORMAL" source="#BodyM_3_0_Normal_id" />
+        </vertices>
+        <triangles material="Mdl_0_Mtl_RemoteMt" count="76">
+          <input semantic="VERTEX" source="#BodyM_3_0_vtx_id" offset="0" />
+          <input semantic="TEXCOORD" source="#BodyM_3_0_TexCoord0_id" offset="0" set="0" />
+          <p>32 5 4 32 33 5 32 4 27 32 48 33 32 27 54 32 55 48 32 54 55 5 6 4 5 33 37 5 7 6 5 37 7 27 26 54 27 4 26 4 6 26 48 49 33 33 49 37 7 29 6 7 37 36 7 36 29 37 49 36 54 26 53 6 29 28 6 28 26 26 28 53 49 50 36 36 50 29 28 52 53 28 29 51 28 51 52 51 29 50 21 22 20 21 23 22 21 20 44 21 47 23 21 44 45 21 45 47 22 42 20 22 23 41 22 40 42 22 41 40 44 56 45 44 20 43 44 63 56 44 43 63 43 20 42 43 42 63 47 46 23 47 45 58 47 58 46 23 46 41 40 62 42 40 41 60 40 61 62 40 60 61 62 63 42 56 57 45 45 57 58 46 59 41 46 58 59 59 60 41 17 18 16 17 19 18 17 16 38 17 38 39 19 35 18 35 34 18 0 1 2 0 2 24 0 24 25 1 3 2 1 31 3 31 30 3 9 10 8 9 11 10 13 14 12 13 15 14</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="CommunicationM_0_0_ctrl_id" name="CommunicationM_0_0_ctrl">
+      <skin source="#CommunicationM_0_0_geo_id">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="CommunicationM_0_0_ctrl_names_id" name="CommunicationM_0_0_ctrl_names">
+          <Name_array id="CommunicationM_0_0_ctrl_names_array_id" count="8">TopL RotL Antena1M Antena2M BodyM TransmissionL TransmissionJ ReceptionJ</Name_array>
+          <technique_common>
+            <accessor source="#CommunicationM_0_0_ctrl_names_array_id" count="8" stride="1">
+              <param name="JOINT" type="Name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="CommunicationM_0_0_ctrl_poses_id" name="CommunicationM_0_0_ctrl_poses">
+          <float_array id="CommunicationM_0_0_ctrl_poses_array_id" count="128">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -0.723601 0 0 1 0 0 0 0 1 1.044157 0.3800421 0 -0.2926324 -0.3800421 1.044157 0 -1.17313 0 0 1.111111 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -1.424016 0 0 1 0 0 0 0 1 1.044157 0.3800421 0 -0.2926324 -0.3800421 1.044157 0 -0.6192956 0 0 1.111111 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -1.42565 0 0 1 0 0 0 0 1 -3.343093E-06 -1.216786E-06 -1 9.369253E-07 -4.067829E-12 1.000104 -1.216786E-06 -1.429825 1.000104 2.980446E-08 -3.343093E-06 0.2401273 0 0 0 1 -3.343093E-06 -1.216786E-06 -1 -2.399999 -4.067829E-12 1.000104 -1.216786E-06 -1.429825 1.000104 2.980446E-08 -3.343093E-06 0.2401273 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#CommunicationM_0_0_ctrl_poses_array_id" count="8" stride="16">
+              <param name="TRANSFORM" type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="CommunicationM_0_0_ctrl_weights_id" name="CommunicationM_0_0_ctrl_weights">
+          <float_array id="CommunicationM_0_0_ctrl_weights_array_id" count="8">0.63 0.37 0.5 0.88 0.12 0.75 0.25 1</float_array>
+          <technique_common>
+            <accessor source="#CommunicationM_0_0_ctrl_weights_array_id" count="8" stride="1">
+              <param name="WEIGHT" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#CommunicationM_0_0_ctrl_names_id" />
+          <input semantic="INV_BIND_MATRIX" source="#CommunicationM_0_0_ctrl_poses_id" />
+        </joints>
+        <vertex_weights count="114">
+          <input semantic="JOINT" source="#CommunicationM_0_0_ctrl_names_id" offset="0" />
+          <input semantic="WEIGHT" source="#CommunicationM_0_0_ctrl_weights_id" offset="1" />
+          <vcount>2 2 2 2 2 2 2 2 1 1 2 2 2 2 2 2 2 2 1 1 2 2 2 2 2 2 2 2 2 2 2 2 1 1 2 2 2 2 2 2 2 2 1 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 1 2 1 2 2 2 2 2</vcount>
+          <v>6 0 7 1 6 0 7 1 6 2 7 2 6 2 7 2 6 3 7 4 6 3 7 4 6 5 7 6 6 5 7 6 6 7 6 7 6 0 7 1 6 0 7 1 6 2 7 2 6 2 7 2 6 3 7 4 6 3 7 4 6 5 7 6 6 5 7 6 6 7 6 7 6 3 7 4 6 3 7 4 6 5 7 6 6 5 7 6 6 0 7 1 6 0 7 1 6 1 7 0 6 1 7 0 6 4 7 3 6 6 7 5 6 4 7 3 6 6 7 5 7 7 7 7 6 1 7 0 6 2 7 2 6 1 7 0 6 2 7 2 6 4 7 3 6 6 7 5 6 4 7 3 6 6 7 5 7 7 6 4 7 3 7 7 6 4 7 3 6 6 7 5 6 1 7 0 6 6 7 5 6 1 7 0 6 0 7 1 6 0 7 1 6 2 7 2 6 2 7 2 6 3 7 4 6 3 7 4 6 5 7 6 6 5 7 6 6 7 6 7 6 3 7 4 6 3 7 4 6 5 7 6 6 5 7 6 6 0 7 1 6 0 7 1 6 0 7 1 6 0 7 1 6 2 7 2 6 2 7 2 6 3 7 4 6 3 7 4 6 5 7 6 6 5 7 6 6 7 6 7 6 3 7 4 6 3 7 4 6 5 7 6 6 5 7 6 6 0 7 1 6 0 7 1 6 2 7 2 6 2 7 2 6 1 7 0 6 1 7 0 6 4 7 3 6 6 7 5 6 4 7 3 6 6 7 5 7 7 6 4 7 3 7 7 6 4 7 3 6 6 7 5 6 1 7 0 6 6 7 5 6 1 7 0 6 2 7 2 6 2 7 2 6 1 7 0 6 1 7 0 6 4 7 3 6 6 7 5 6 4 7 3 6 6 7 5 7 7 6 4 7 3 7 7 6 4 7 3 6 6 7 5 6 1 7 0 6 6 7 5 6 1 7 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="Antena1M_1_0_ctrl_id" name="Antena1M_1_0_ctrl">
+      <skin source="#Antena1M_1_0_geo_id">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="Antena1M_1_0_ctrl_names_id" name="Antena1M_1_0_ctrl_names">
+          <Name_array id="Antena1M_1_0_ctrl_names_array_id" count="8">TopL RotL Antena1M Antena2M BodyM TransmissionL TransmissionJ ReceptionJ</Name_array>
+          <technique_common>
+            <accessor source="#Antena1M_1_0_ctrl_names_array_id" count="8" stride="1">
+              <param name="JOINT" type="Name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Antena1M_1_0_ctrl_poses_id" name="Antena1M_1_0_ctrl_poses">
+          <float_array id="Antena1M_1_0_ctrl_poses_array_id" count="128">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -0.723601 0 0 1 0 0 0 0 1 1.044157 0.3800421 0 -0.2926324 -0.3800421 1.044157 0 -1.17313 0 0 1.111111 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -1.424016 0 0 1 0 0 0 0 1 1.044157 0.3800421 0 -0.2926324 -0.3800421 1.044157 0 -0.6192956 0 0 1.111111 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -1.42565 0 0 1 0 0 0 0 1 -3.343093E-06 -1.216786E-06 -1 9.369253E-07 -4.067829E-12 1.000104 -1.216786E-06 -1.429825 1.000104 2.980446E-08 -3.343093E-06 0.2401273 0 0 0 1 -3.343093E-06 -1.216786E-06 -1 -2.399999 -4.067829E-12 1.000104 -1.216786E-06 -1.429825 1.000104 2.980446E-08 -3.343093E-06 0.2401273 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Antena1M_1_0_ctrl_poses_array_id" count="8" stride="16">
+              <param name="TRANSFORM" type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Antena1M_1_0_ctrl_weights_id" name="Antena1M_1_0_ctrl_weights">
+          <float_array id="Antena1M_1_0_ctrl_weights_array_id" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#Antena1M_1_0_ctrl_weights_array_id" count="1" stride="1">
+              <param name="WEIGHT" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Antena1M_1_0_ctrl_names_id" />
+          <input semantic="INV_BIND_MATRIX" source="#Antena1M_1_0_ctrl_poses_id" />
+        </joints>
+        <vertex_weights count="12">
+          <input semantic="JOINT" source="#Antena1M_1_0_ctrl_names_id" offset="0" />
+          <input semantic="WEIGHT" source="#Antena1M_1_0_ctrl_weights_id" offset="1" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+          <v>2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="Antena2M_2_0_ctrl_id" name="Antena2M_2_0_ctrl">
+      <skin source="#Antena2M_2_0_geo_id">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="Antena2M_2_0_ctrl_names_id" name="Antena2M_2_0_ctrl_names">
+          <Name_array id="Antena2M_2_0_ctrl_names_array_id" count="8">TopL RotL Antena1M Antena2M BodyM TransmissionL TransmissionJ ReceptionJ</Name_array>
+          <technique_common>
+            <accessor source="#Antena2M_2_0_ctrl_names_array_id" count="8" stride="1">
+              <param name="JOINT" type="Name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Antena2M_2_0_ctrl_poses_id" name="Antena2M_2_0_ctrl_poses">
+          <float_array id="Antena2M_2_0_ctrl_poses_array_id" count="128">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -0.723601 0 0 1 0 0 0 0 1 1.044157 0.3800421 0 -0.2926324 -0.3800421 1.044157 0 -1.17313 0 0 1.111111 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -1.424016 0 0 1 0 0 0 0 1 1.044157 0.3800421 0 -0.2926324 -0.3800421 1.044157 0 -0.6192956 0 0 1.111111 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -1.42565 0 0 1 0 0 0 0 1 -3.343093E-06 -1.216786E-06 -1 9.369253E-07 -4.067829E-12 1.000104 -1.216786E-06 -1.429825 1.000104 2.980446E-08 -3.343093E-06 0.2401273 0 0 0 1 -3.343093E-06 -1.216786E-06 -1 -2.399999 -4.067829E-12 1.000104 -1.216786E-06 -1.429825 1.000104 2.980446E-08 -3.343093E-06 0.2401273 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Antena2M_2_0_ctrl_poses_array_id" count="8" stride="16">
+              <param name="TRANSFORM" type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Antena2M_2_0_ctrl_weights_id" name="Antena2M_2_0_ctrl_weights">
+          <float_array id="Antena2M_2_0_ctrl_weights_array_id" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#Antena2M_2_0_ctrl_weights_array_id" count="1" stride="1">
+              <param name="WEIGHT" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Antena2M_2_0_ctrl_names_id" />
+          <input semantic="INV_BIND_MATRIX" source="#Antena2M_2_0_ctrl_poses_id" />
+        </joints>
+        <vertex_weights count="26">
+          <input semantic="JOINT" source="#Antena2M_2_0_ctrl_names_id" offset="0" />
+          <input semantic="WEIGHT" source="#Antena2M_2_0_ctrl_weights_id" offset="1" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+          <v>3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="BodyM_3_0_ctrl_id" name="BodyM_3_0_ctrl">
+      <skin source="#BodyM_3_0_geo_id">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="BodyM_3_0_ctrl_names_id" name="BodyM_3_0_ctrl_names">
+          <Name_array id="BodyM_3_0_ctrl_names_array_id" count="8">TopL RotL Antena1M Antena2M BodyM TransmissionL TransmissionJ ReceptionJ</Name_array>
+          <technique_common>
+            <accessor source="#BodyM_3_0_ctrl_names_array_id" count="8" stride="1">
+              <param name="JOINT" type="Name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="BodyM_3_0_ctrl_poses_id" name="BodyM_3_0_ctrl_poses">
+          <float_array id="BodyM_3_0_ctrl_poses_array_id" count="128">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -0.723601 0 0 1 0 0 0 0 1 1.044157 0.3800421 0 -0.2926324 -0.3800421 1.044157 0 -1.17313 0 0 1.111111 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -1.424016 0 0 1 0 0 0 0 1 1.044157 0.3800421 0 -0.2926324 -0.3800421 1.044157 0 -0.6192956 0 0 1.111111 0 0 0 0 1 0.9397416 0.3420379 0 -0.2633692 -0.3420379 0.9397416 0 -1.42565 0 0 1 0 0 0 0 1 -3.343093E-06 -1.216786E-06 -1 9.369253E-07 -4.067829E-12 1.000104 -1.216786E-06 -1.429825 1.000104 2.980446E-08 -3.343093E-06 0.2401273 0 0 0 1 -3.343093E-06 -1.216786E-06 -1 -2.399999 -4.067829E-12 1.000104 -1.216786E-06 -1.429825 1.000104 2.980446E-08 -3.343093E-06 0.2401273 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#BodyM_3_0_ctrl_poses_array_id" count="8" stride="16">
+              <param name="TRANSFORM" type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="BodyM_3_0_ctrl_weights_id" name="BodyM_3_0_ctrl_weights">
+          <float_array id="BodyM_3_0_ctrl_weights_array_id" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#BodyM_3_0_ctrl_weights_array_id" count="1" stride="1">
+              <param name="WEIGHT" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#BodyM_3_0_ctrl_names_id" />
+          <input semantic="INV_BIND_MATRIX" source="#BodyM_3_0_ctrl_poses_id" />
+        </joints>
+        <vertex_weights count="64">
+          <input semantic="JOINT" source="#BodyM_3_0_ctrl_names_id" offset="0" />
+          <input semantic="WEIGHT" source="#BodyM_3_0_ctrl_weights_id" offset="1" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+          <v>4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="TopL_00_id" name="TopL_00">
+      <node id="TopL_bone_id" name="TopL" sid="TopL" type="JOINT">
+        <translate sid="translate">0 0 0</translate>
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <node id="RotL_bone_id" name="RotL" sid="RotL" type="JOINT">
+          <translate sid="translate">0 0.77 0</translate>
+          <rotate sid="rotateZ">0 0 1 20.00001</rotate>
+          <rotate sid="rotateY">0 1 0 0</rotate>
+          <rotate sid="rotateX">1 0 0 0</rotate>
+          <scale sid="scale">1 1 1</scale>
+          <node id="Antena1M_bone_id" name="Antena1M" sid="Antena1M" type="JOINT">
+            <translate sid="translate">0 0.332216 0</translate>
+            <rotate sid="rotateZ">0 0 1 0</rotate>
+            <rotate sid="rotateY">0 1 0 0</rotate>
+            <rotate sid="rotateX">1 0 0 0</rotate>
+            <scale sid="scale">0.9 0.9 0.9</scale>
+          </node>
+          <node id="Antena2M_bone_id" name="Antena2M" sid="Antena2M" type="JOINT">
+            <translate sid="translate">0 0.700415 0</translate>
+            <rotate sid="rotateZ">0 0 1 0</rotate>
+            <rotate sid="rotateY">0 1 0 0</rotate>
+            <rotate sid="rotateX">1 0 0 0</rotate>
+            <scale sid="scale">1 1 1</scale>
+          </node>
+          <node id="BodyM_bone_id" name="BodyM" sid="BodyM" type="JOINT">
+            <translate sid="translate">0 -0.166235 0</translate>
+            <rotate sid="rotateZ">0 0 1 0</rotate>
+            <rotate sid="rotateY">0 1 0 0</rotate>
+            <rotate sid="rotateX">1 0 0 0</rotate>
+            <scale sid="scale">0.9 0.9 0.9</scale>
+          </node>
+          <node id="TransmissionL_bone_id" name="TransmissionL" sid="TransmissionL" type="JOINT">
+            <translate sid="translate">0 0.702049 0</translate>
+            <rotate sid="rotateZ">0 0 1 0</rotate>
+            <rotate sid="rotateY">0 1 0 0</rotate>
+            <rotate sid="rotateX">1 0 0 0</rotate>
+            <scale sid="scale">1 1 1</scale>
+            <node id="TransmissionJ_bone_id" name="TransmissionJ" sid="TransmissionJ" type="JOINT">
+              <translate sid="translate">0 0 0</translate>
+              <rotate sid="rotateZ">0 0 1 0</rotate>
+              <rotate sid="rotateY">0 1 0 90.00021</rotate>
+              <rotate sid="rotateX">1 0 0 20.00001</rotate>
+              <scale sid="scale">1 1 1</scale>
+              <node id="ReceptionJ_bone_id" name="ReceptionJ" sid="ReceptionJ" type="JOINT">
+                <translate sid="translate">2.4 0 0</translate>
+                <rotate sid="rotateZ">0 0 1 0</rotate>
+                <rotate sid="rotateY">0 1 0 0</rotate>
+                <rotate sid="rotateX">1 0 0 0</rotate>
+                <scale sid="scale">1 1 1</scale>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node id="CommunicationM_0_0_node_id" name="CommunicationM_0_0_node" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_controller url="#CommunicationM_0_0_ctrl_id">
+          <skeleton>#TopL_bone_id</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mdl_0_Mtl_CommunicationC" target="#CommunicationC_mat_id" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+      <node id="Antena1M_1_0_node_id" name="Antena1M_1_0_node" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_controller url="#Antena1M_1_0_ctrl_id">
+          <skeleton>#TopL_bone_id</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mdl_0_Mtl_RemoteMt" target="#RemoteMt_mat_id" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+      <node id="Antena2M_2_0_node_id" name="Antena2M_2_0_node" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_controller url="#Antena2M_2_0_ctrl_id">
+          <skeleton>#TopL_bone_id</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mdl_0_Mtl_RemoteMt" target="#RemoteMt_mat_id" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+      <node id="BodyM_3_0_node_id" name="BodyM_3_0_node" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_controller url="#BodyM_3_0_ctrl_id">
+          <skeleton>#TopL_bone_id</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mdl_0_Mtl_RemoteMt" target="#RemoteMt_mat_id" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#TopL_00_id" />
+  </scene>
+</COLLADA>
